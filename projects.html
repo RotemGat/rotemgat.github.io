@@ -30,11 +30,50 @@
     </section>
 
     <section class="section project-list">
-      <article class="project-case-study">
+      <article class="project-case-study project-case-study-nlp">
         <div class="project-case-heading">
           <div class="project-number">01</div>
           <div>
-            <p class="card-meta">Physical Design / SolidWorks / 2022</p>
+            <p class="card-meta">NLP Course Project · 2025</p>
+            <h2>Evaluating Size-Based Relational Reasoning in VLMs</h2>
+            <p class="project-authors">Rotem Gatenyo and Ofek Basson</p>
+          </div>
+        </div>
+
+        <div class="project-case-summary">
+          <div>
+            <p>Do vision-language models reason from what they see, or fall back on familiar real-world proportions? We built a controlled synthetic benchmark in Blender and evaluated Llama 3.2 Vision on object identification and height comparison under natural, inverted, and exaggerated size ratios.</p>
+          </div>
+          <ul class="project-facts">
+            <li><strong>Dataset</strong> 10 object pairs, 3 size conditions</li>
+            <li><strong>Study</strong> VLM evaluation and 32-person human study</li>
+            <li><strong>Tools</strong> Blender, Python, Llama 3.2 Vision</li>
+          </ul>
+        </div>
+
+        <div class="project-gallery project-gallery-nlp" aria-label="VLM relational reasoning project">
+          <figure class="gallery-item">
+            <img src="assets/images/projects/vlm-relational-reasoning/teaser.png" alt="A chair and shoe shown at natural and inverted size ratios, with correct and incorrect VLM answers">
+            <figcaption><span>01</span> Research question</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/images/projects/vlm-relational-reasoning/counterfactual-scene.png" alt="A controlled Blender render showing an orange larger than a refrigerator">
+            <figcaption><span>02</span> Controlled render</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/images/projects/vlm-relational-reasoning/prompt-effect.png" alt="Plots comparing taller-decision accuracy with and without object names in the prompt">
+            <figcaption><span>03</span> Results analysis</figcaption>
+          </figure>
+        </div>
+
+        <p class="project-finding"><strong>Key finding:</strong> Inverting expected object-size relationships significantly reduced the model's visual height-comparison accuracy without object labels, while human participants achieved 100% accuracy across all conditions.</p>
+      </article>
+
+      <article class="project-case-study">
+        <div class="project-case-heading">
+          <div class="project-number">02</div>
+          <div>
+            <p class="card-meta">Midburn Installation · 2022</p>
             <h2>Maze Zaz — Midburn Interactive Installation</h2>
           </div>
         </div>
@@ -64,27 +103,6 @@
             <img src="assets/images/projects/midburn/midburn-sunset.jpg" alt="Participants using the completed Maze Zaz installation at Midburn during sunset">
             <figcaption><span>04</span> At Midburn</figcaption>
           </figure>
-        </div>
-      </article>
-
-      <article class="project-row">
-        <div class="project-number">02</div>
-        <div class="project-image placeholder-nlp" role="img" aria-label="Placeholder for the NLP course project image">
-          <span>Diagram / demo</span>
-        </div>
-        <div class="project-copy">
-          <p class="card-meta">Machine Learning / NLP</p>
-          <h2>NLP Course Project</h2>
-          <p>Describe the research question, dataset, model, evaluation, and what you learned. A compact project page can later include a demo, poster, or repository link.</p>
-          <ul class="project-details">
-            <li>Role: Research and implementation</li>
-            <li>Tools: Python, PyTorch</li>
-            <li>Focus: Natural language processing</li>
-          </ul>
-          <div class="button-row compact">
-            <a class="button primary" href="#">GitHub</a>
-            <a class="button" href="#">Report</a>
-          </div>
         </div>
       </article>
 
