@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js" defer></script>
 </head>
-<body>
+<body class="home-page">
   <header class="site-header">
     <a class="logo" href="index.html" aria-label="Rotem Gatenyo home">RG<span>.</span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -24,58 +24,36 @@
 
   <main>
     <section class="hero section">
-      <div class="hero-copy">
-        <p class="eyebrow">Computer Vision Researcher</p>
-        <h1>Rotem<br><span>Gatenyo</span></h1>
-        <p class="hero-intro">Exploring generative AI, 3D geometry, and creative technologies.</p>
-        <div class="button-row" aria-label="Profile links">
-          <a class="button primary" href="https://scholar.google.com/citations?user=MCSaL64AAAAJ&hl=en" aria-label="Google Scholar profile">Scholar</a>
-          <a class="button" href="https://github.com/RotemGat">GitHub</a>
-          <a class="button" href="mailto:rotemg8@gmail.com">Email</a>
-          <a class="button" href="https://www.linkedin.com/in/rotem-g8/">LinkedIn</a>
+      <div class="hero-main">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Vision Researcher</p>
+          <h1>Rotem<br><span>Gatenyo</span></h1>
+          <p class="hero-intro">Exploring generative AI, 3D geometry, and creative technologies.</p>
+          <div class="button-row" aria-label="Profile links">
+            <a class="button primary" href="https://scholar.google.com/citations?user=MCSaL64AAAAJ&hl=en" aria-label="Google Scholar profile">Scholar</a>
+            <a class="button" href="https://github.com/RotemGat">GitHub</a>
+            <a class="button" href="mailto:rotemg8@gmail.com">Email</a>
+            <a class="button" href="https://www.linkedin.com/in/rotem-g8/">LinkedIn</a>
+          </div>
         </div>
+        <img class="hero-portrait" src="assets/images/profile/rotem-gatenyo.png" alt="Portrait of Rotem Gatenyo">
       </div>
-      <div class="hero-visual">
-        <img src="assets/images/hero/colorful-mesh-objects.png" alt="A colorful collection of detailed 3D mesh objects, including a sculptural bust, chair, flower, vessel, and geometric form">
-      </div>
-    </section>
 
-    <section class="section two-column" id="about">
-      <div>
-        <p class="section-number">01</p>
-        <h2>About</h2>
-        <img class="about-portrait" src="assets/images/profile/rotem-gatenyo.png" alt="Portrait of Rotem Gatenyo">
-      </div>
-      <div class="prose">
-        <p>I recently completed an M.Sc. in Computer Science at Reichman University, where I conducted my thesis research at the Canvas Lab.</p>
-        <p>My research focuses on visual computing, 3D geometry, and generative models. I am interested in how learning-based systems can understand spatial relationships and support the creation of coherent three-dimensional scenes.</p>
-        <p>I enjoy moving between research and making: developing technical ideas, building visual prototypes, and turning complex systems into clear, engaging experiences.</p>
-        <p>I am particularly interested in computational creativity, artistic tools, and the intersection of machine learning and visual expression.</p>
-      </div>
-    </section>
-
-    <section class="section interests">
-      <div class="section-heading">
-        <div>
-          <p class="section-number">02</p>
-          <h2>Research Interests</h2>
+      <div class="hero-about" id="about">
+        <div class="hero-about-heading">
+          <p class="section-number">About</p>
+          <h2>Research & Creative Practice</h2>
         </div>
-        <p>Questions I keep returning to.</p>
-      </div>
-      <div class="tag-grid">
-        <span>Computer Graphics</span>
-        <span>3D Vision</span>
-        <span>Generative AI</span>
-        <span>Vision-Language Models</span>
-        <span>Computational Art</span>
-        <span>Creative Tools</span>
+        <div class="prose">
+          <p>I recently completed an M.Sc. in Computer Science at Reichman University, where I conducted my thesis research at the Canvas Lab. My work explores visual computing, 3D geometry, and generative models, with a particular interest in spatial understanding, computational creativity, and tools that connect machine learning with visual expression.</p>
+        </div>
       </div>
     </section>
 
     <section class="section featured">
       <div class="section-heading">
         <div>
-          <p class="section-number">03</p>
+          <p class="section-number">01</p>
           <h2>Selected Work</h2>
         </div>
         <a class="text-link" href="projects.html">View all projects <span aria-hidden="true">↗</span></a>
@@ -86,9 +64,9 @@
             <img src="assets/images/publications/copy-transform-paste-teaser.png" alt="Copy-Transform-Paste examples aligning 3D object pairs from text prompts">
           </div>
           <div class="card-body">
-            <p class="card-meta">Research / 2026</p>
+            <p class="conference-badge">Accepted to CVPR 2026</p>
             <h3>Copy-Transform-Paste</h3>
-            <p>Zero-shot alignment of two 3D meshes using language guidance and geometric constraints for semantically meaningful, physically plausible placement.</p>
+            <p>Our CVPR 2026 paper on zero-shot alignment of two 3D meshes using vision-language guidance and geometric constraints.</p>
             <a class="text-link" href="publications.html">Explore publication <span aria-hidden="true">→</span></a>
           </div>
         </article>
@@ -104,6 +82,30 @@
           </div>
         </article>
       </div>
+    </section>
+
+    <section class="section talks-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">02</p>
+          <h2>Talks & Presentations</h2>
+        </div>
+      </div>
+
+      <article class="talk-card">
+        <a class="talk-image" href="https://www.youtube.com/live/2fEDy-uTAII?t=18824" aria-label="Watch the Israel Computer Vision Day 2025 talk">
+          <img src="assets/images/publications/israel-vision-day-2025.png" alt="Rotem Gatenyo presenting Copy-Transform-Paste at Israel Computer Vision Day 2025">
+        </a>
+        <div class="talk-content">
+          <p class="talk-label">Israel Computer Vision Day · 2025</p>
+          <h3>Copy-Transform-Paste</h3>
+          <p>I presented our work on zero-shot object-object alignment, shared the ideas behind the method, and discussed it with the Israeli computer vision community.</p>
+          <div class="button-row compact">
+            <a class="button primary" href="https://www.youtube.com/live/2fEDy-uTAII?t=18824">Watch Talk</a>
+            <a class="button" href="https://rotemgat.github.io/CopyTransformPaste/">Project Page</a>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
 
