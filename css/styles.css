@@ -2407,3 +2407,105 @@ body {
 .talk-card-text > .talk-content {
   grid-column: 1 / -1;
 }
+
+/* Keep responsive rules after the desktop design refinements. */
+@media (max-width: 920px) {
+  .home-page .hero-about,
+  .talk-card,
+  .publications-page .publication-content,
+  .publications-page .publication-content-featured,
+  .projects-page .project-case-summary {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .section > *,
+  .talk-content,
+  .publication-details,
+  .publication-content,
+  .hero-copy {
+    min-width: 0;
+  }
+
+  .home-page .hero-main {
+    gap: 24px;
+  }
+
+  .home-page .hero-about {
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .home-page .talk-card {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .talk-content h3,
+  .publications-page .publication h2,
+  .projects-page .project-case-heading h2 {
+    font-size: clamp(1.4rem, 5.8vw, 2rem);
+    overflow-wrap: anywhere;
+  }
+
+  .publications-page .publication {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .publication-visual,
+  .talk-image,
+  .talk-image img {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .projects-page .project-case-heading {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .projects-page .project-gallery,
+  .projects-page .project-gallery-nlp {
+    grid-template-columns: minmax(0, 1fr);
+    overflow: visible;
+    padding-bottom: 0;
+    gap: 24px;
+  }
+
+  .gallery-item {
+    min-width: 0;
+  }
+
+  .button-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .button,
+  .menu-toggle,
+  .site-nav a {
+    min-height: 44px;
+  }
+
+  .menu-toggle {
+    padding-inline: 12px;
+  }
+
+  .site-nav {
+    top: 100%;
+  }
+
+  .site-footer {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+    padding-block: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .inner-page .page-hero h1 {
+    font-size: clamp(2.25rem, 10.5vw, 3.4rem);
+  }
+}

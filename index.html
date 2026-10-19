@@ -23,50 +23,64 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=20261019">
   <script src="js/main.js" defer></script>
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Rotem Gatenyo",
-    "url": "https://rotemgat.github.io/",
-    "image": "https://rotemgat.github.io/assets/images/profile/rotem-gatenyo.png",
-    "jobTitle": "Computer Vision Researcher",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "Tel Aviv University",
-      "url": "https://english.tau.ac.il/"
-    },
-    "alumniOf": [
-      {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Rotem Gatenyo",
+      "url": "https://rotemgat.github.io/",
+      "image": "https://rotemgat.github.io/assets/images/profile/rotem-gatenyo.png",
+      "jobTitle": "Computer Vision Researcher",
+      "affiliation": {
         "@type": "CollegeOrUniversity",
-        "name": "Reichman University",
-        "url": "https://www.runi.ac.il/en/"
+        "name": "Tel Aviv University",
+        "url": "https://english.tau.ac.il/"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Reichman University",
+          "url": "https://www.runi.ac.il/en/"
+        }
+      ],
+      "sameAs": [
+        "https://scholar.google.com/citations?user=MCSaL64AAAAJ&hl=en",
+        "https://github.com/RotemGat",
+        "https://www.linkedin.com/in/rotem-g8/",
+        "https://geometric-intelligence-lab.github.io"
+      ],
+      "knowsAbout": [
+        "Computer Vision",
+        "3D Geometry",
+        "Generative AI",
+        "Geometric Intelligence",
+        "Creative Technologies"
+      ],
+      "@id": "https://rotemgat.github.io/#person"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://rotemgat.github.io/#profile",
+      "url": "https://rotemgat.github.io/",
+      "name": "Rotem Gatenyo | Computer Vision & 3D Geometry Researcher",
+      "mainEntity": {
+        "@id": "https://rotemgat.github.io/#person"
       }
-    ],
-    "sameAs": [
-      "https://scholar.google.com/citations?user=MCSaL64AAAAJ&hl=en",
-      "https://github.com/RotemGat",
-      "https://www.linkedin.com/in/rotem-g8/",
-      "https://geometric-intelligence-lab.github.io"
-    ],
-    "knowsAbout": [
-      "Computer Vision",
-      "3D Geometry",
-      "Generative AI",
-      "Geometric Intelligence",
-      "Creative Technologies"
-    ]
-  }
+    }
+  ]
+}
   </script>
 </head>
 <body class="home-page">
   <header class="site-header">
-    <a class="logo" href="index.html" aria-label="Rotem Gatenyo home">RG<span>.</span></a>
+    <a class="logo" href="/" aria-label="Rotem Gatenyo home">RG<span>.</span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
+      <a class="active" href="/">Home</a>
       <a href="publications.html">Publications</a>
       <a href="projects.html">Projects</a>
     </nav>
@@ -143,7 +157,7 @@
           <h2>Research & Creative Practice</h2>
         </div>
         <div class="prose">
-          <p>I recently completed an M.Sc. in Computer Science at Reichman University, where I conducted my thesis research at the Canvas Lab. I am now starting my Ph.D. at Tel Aviv University with Itai Lang at the <a href="https://geometric-intelligence-lab.github.io">Geometric Intelligence Lab</a>. My work explores visual computing, 3D geometry, and generative models, with a particular interest in spatial understanding, computational creativity, and tools that connect machine learning with visual expression.</p>
+          <p>I am Rotem Gatenyo, a Ph.D. researcher at Tel Aviv University with Itai Lang at the <a href="https://geometric-intelligence-lab.github.io">Geometric Intelligence Lab</a>. I completed my M.Sc. in Computer Science at Reichman University, where I conducted my thesis research at the Canvas Lab. My work explores visual computing, 3D geometry, and generative models, with a particular interest in spatial understanding, computational creativity, and tools that connect machine learning with visual expression.</p>
         </div>
       </div>
     </section>
