@@ -2398,3 +2398,12 @@ body {
 .card-art-publication img {
   background: var(--panel);
 }
+
+/* Talks without a recording or image */
+.talk-card + .talk-card {
+  margin-top: 28px;
+}
+
+.talk-card-text > .talk-content {
+  grid-column: 1 / -1;
+}
